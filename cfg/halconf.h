@@ -170,7 +170,7 @@
  * @brief   Enables the UART subsystem.
  */
 #if !defined(HAL_USE_UART) || defined(__DOXYGEN__)
-#define HAL_USE_UART                        FALSE
+#define HAL_USE_UART                        TRUE
 #endif
 
 /**
@@ -196,7 +196,7 @@
  * @note    Disabling this option saves both code and data space.
  */
 #if !defined(PAL_USE_CALLBACKS) || defined(__DOXYGEN__)
-#define PAL_USE_CALLBACKS                   TRUE
+#define PAL_USE_CALLBACKS                   FALSE
 #endif
 
 /**
@@ -204,7 +204,7 @@
  * @note    Disabling this option saves both code and data space.
  */
 #if !defined(PAL_USE_WAIT) || defined(__DOXYGEN__)
-#define PAL_USE_WAIT                        TRUE
+#define PAL_USE_WAIT                        FALSE
 #endif
 
 /*===========================================================================*/
@@ -242,7 +242,7 @@
  * @brief   Enforces the driver to use direct callbacks rather than OSAL events.
  */
 #if !defined(CAN_ENFORCE_USE_CALLBACKS) || defined(__DOXYGEN__)
-#define CAN_ENFORCE_USE_CALLBACKS           TRUE
+#define CAN_ENFORCE_USE_CALLBACKS           FALSE
 #endif
 
 /*===========================================================================*/
